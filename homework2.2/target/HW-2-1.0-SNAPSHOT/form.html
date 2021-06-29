@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>SelectBeer</title>
+    </script>
+
+</head>
+<body>
+<h1>BeerSelect</h1>
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-4">
+    <form action="SelectBeerServlet" method="post" name="registration">
+        <div class="mb-3">
+        <label for="amount">请随意输入一个整数进行验证</label>
+        <input type="text" name="amount" id="amount" />
+        </div>
+        <div class="mb-3">
+        <label for="body">Body</label>
+        <select class="form-control form-select" name="body" id="body">
+            <option selected>Select Beer Body</option>
+            <option value="large">Large</option>
+            <option value="medium">Medium</option>
+            <option value="small">Small</option>
+        </select>
+        </div>
+        <div class="form-input" id="oz">
+            <label><input type="checkbox" name="sizes" value="12oz" id="check1">12oz</label>
+            <label><input type="checkbox" name="sizes" value="16oz" id="check2">16oz</label>
+            <label><input type="checkbox" name="sizes" value="20oz"id="check3">20oz</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+</div>
+    </div>
+</div>
+</body>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+<script src="form-validation.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</html>
